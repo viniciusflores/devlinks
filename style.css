@@ -20,7 +20,7 @@
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.2);
-  --highlight-color: rgba(0, 0, 0, 0.2);
+  --highlight-color: rgba(0, 0, 0, 0.02);
   --switch-bg-url: url('./assets/Sun.svg');
 }
 
@@ -87,6 +87,11 @@ body * {
 .light #switch button{
   animation: slide-in .2s forwards;
 }
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
 
 #switch span {
   display: block;
